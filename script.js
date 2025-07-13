@@ -33,7 +33,7 @@ function handleClick(e) {
   e.target.textContent = currentPlayer;
 
   if (checkWinner()) {
-    statusText.innerHTML = `Player ${currentPlayer} wins!;
+    statusText.innerHTML = `Player ${currentPlayer} wins!`;
     gameActive = false;
     return;
   }
