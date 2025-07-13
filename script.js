@@ -33,13 +33,13 @@ function handleClick(e) {
   e.target.textContent = currentPlayer;
 
   if (checkWinner()) {
-    statusText.innerHTML = `Player ${currentPlayer} wins!`;
+    statusText.innerHTML = `Player ${currentPlayer} wins! 🎉`;
     gameActive = false;
     return;
   }
 
   if (board.every(cell => cell !== "")) {
-    statusText.innerHTML = "It's a Tie!";
+    statusText.innerHTML = "It's a Tie! 😐";
     gameActive = false;
     return;
   }
